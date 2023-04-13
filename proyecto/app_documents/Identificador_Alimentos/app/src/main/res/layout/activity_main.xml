@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Muestra_imagen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="300dp"
+        android:background="#78807B"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_compass"
+        tools:srcCompat="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/Camara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:text="Camara"
+        app:layout_constraintBottom_toTopOf="@+id/L_Camara"
+        app:layout_constraintEnd_toEndOf="@+id/B_Camara"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/B_Camara"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Galeria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Galeria"
+        app:layout_constraintBottom_toTopOf="@+id/B_Galeria"
+        app:layout_constraintEnd_toEndOf="@+id/B_Galeria"
+        app:layout_constraintStart_toStartOf="@+id/B_Galeria"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/L_Camara"
+        android:layout_width="81dp"
+        android:layout_height="58dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/B_Camara"
+        android:layout_width="75dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/Muestra_imagen"
+        app:layout_constraintEnd_toEndOf="@+id/L_Camara"
+        app:layout_constraintStart_toStartOf="@+id/L_Camara"
+        app:layout_constraintTop_toTopOf="@+id/Camara"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/B_Galeria"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/Muestra_imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/L_Camara"
+        app:layout_constraintTop_toTopOf="@+id/Galeria"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/L_Galeria"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/Muestra_imagen"
+        app:layout_constraintEnd_toEndOf="@+id/B_Galeria"
+        app:layout_constraintStart_toStartOf="@+id/B_Galeria"
+        app:layout_constraintTop_toTopOf="@+id/B_Galeria"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/T_Alimentos"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Alimento"
+        app:layout_constraintBottom_toTopOf="@+id/Texto_calorias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Muestra_imagen" />
+
+    <TextView
+        android:id="@+id/Texto_calorias"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00E91E63"
+        android:foregroundTint="@color/purple_200"
+        android:lineSpacingExtra="8sp"
+        android:text="Calorias"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/B_Calculo"
+        android:layout_width="144dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="13dp"
+        android:background="#5E03DAC5"
+        android:foregroundTint="#6A4646"
+        android:text="Calcular"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/T_Alimentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Muestra_imagen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
