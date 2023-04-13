@@ -9,20 +9,4 @@ int = 32
     da
     fvsd
 
-<html>
-    <head>
-        <title>divs</title>
-        <link rel="stylesheet" type="text/css" href="st.css" />
-    </head>
-    <body>
-         <div id="divPadre">
-             <div id="divHijo1">
-                <div id="divHijo2">
-                    <div id="divHijo3">
-                        <div id="divHijo4"></div>
-                    </div>
-                </div>
-             </div>
-         </div>
-    </body>
-</html>
+<img src="[https://www.example.com/images/dinosaur.jpg](https://www.nationalgeographic.com.es/medio/2023/01/24/tiranosaurio-portada_0705ac0f_230124194318_800x800.webp)">
